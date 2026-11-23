@@ -15,6 +15,7 @@ This is my opinionated set of skills and tools for working with AI in Codex and 
 The `personal-toolkits` marketplace contains one plugin, `personal-toolkit`, with these shared skills.
 
 - [blast-radius](plugins/personal-toolkit/skills/blast-radius/SKILL.md) traces who relies on a changed behavior and tests whether it still works for them.
+- [build-company-map](plugins/personal-toolkit/skills/build-company-map/SKILL.md) turns internal documentation into a reusable skill for finding company resources and checks access to the systems it maps.
 - [change-review](plugins/personal-toolkit/skills/change-review/SKILL.md) reviews a local Git diff for correctness and missing tests.
 - [comment-review](plugins/personal-toolkit/skills/comment-review/SKILL.md) reviews code comments and removes unnecessary ones when asked.
 - [create-verification-skill](plugins/personal-toolkit/skills/create-verification-skill/SKILL.md) turns one user workflow into a project-local skill and runs its steps to verify the result.
@@ -24,7 +25,7 @@ The `personal-toolkits` marketplace contains one plugin, `personal-toolkit`, wit
 
 ## Install via skills.sh
 
-Browse all seven skills on [skills.sh](https://www.skills.sh/bitkill/added-context). From the project where you want to use them, run the installer and choose your skills and agents.
+Browse the skills on [skills.sh](https://www.skills.sh/bitkill/added-context). From the project where you want to use them, run the installer and choose your skills and agents.
 
 ```sh
 npx skills add bitkill/added-context
