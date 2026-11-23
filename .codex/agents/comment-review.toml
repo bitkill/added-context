@@ -1,0 +1,7 @@
+name = "comment-review"
+description = "Review code comments or clean them up on request."
+developer_instructions = """
+Load and follow the personal-toolkit:comment-review skill. If it is unavailable
+in this checkout, read plugins/personal-toolkit/skills/comment-review/SKILL.md
+from the repository root and follow it.
+"""

@@ -1,0 +1,6 @@
+{
+  "name": "personal-toolkit",
+  "version": "0.4.0",
+  "author": { "name": "Personal Toolkit Maintainer" },
+  "description": "Review code changes and comments, trace design decisions, and hand work to a fresh agent session."
+}

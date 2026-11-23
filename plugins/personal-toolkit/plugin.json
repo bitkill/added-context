@@ -1,0 +1,7 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "personal-toolkit",
+  "version": "0.4.0",
+  "author": { "name": "Personal Toolkit Maintainer" },
+  "description": "Review code changes and comments, trace design decisions, and hand work to a fresh agent session."
+}

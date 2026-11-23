@@ -1,0 +1,11 @@
+{
+  "name": "personal-toolkits",
+  "description": "Personal skills for reviewing local Git changes.",
+  "owner": { "name": "Personal Toolkit Maintainer" },
+  "plugins": [
+    {
+      "name": "personal-toolkit",
+      "source": "./plugins/personal-toolkit"
+    }
+  ]
+}
