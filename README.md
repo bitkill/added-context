@@ -22,6 +22,20 @@ The `personal-toolkits` marketplace contains one plugin, `personal-toolkit`, wit
 - [review-brief](plugins/personal-toolkit/skills/review-brief/SKILL.md) introduces a PR or MR with a review starting point, a diagram, or a graph of measured timing changes. Interactive Claude Artifacts and Codex Sites require verified company-wide, internal-only access.
 - [why](plugins/personal-toolkit/skills/why/SKILL.md) traces a design choice through Git history and follows the evidence into project docs or Slack when needed.
 
+## Install via skills.sh
+
+Browse all seven skills on [skills.sh](https://www.skills.sh/bitkill/added-context). From the project where you want to use them, run the installer and choose your skills and agents.
+
+```sh
+npx skills add bitkill/added-context
+```
+
+To install a single skill for Codex, specify the skill and agent. For Claude Code, use `--agent claude-code`.
+
+```sh
+npx skills add bitkill/added-context --skill review-brief --agent codex
+```
+
 ## Install from this checkout
 
 Run the commands for your client from the root of this repository.
