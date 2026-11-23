@@ -9,6 +9,12 @@ Write for someone opening the change for the first time. Lead with one or two se
 
 Read the actual PR or MR diff against its target, or the local comparison the user specified. Use the description and linked issue for intent. Follow relevant callers and tests to check what the code does. If a truncated patch hides a relationship, inspect the file at the reviewed revision. If the comparison is unavailable, ask for the diff or revisions.
 
+## Choose what needs review
+
+Call out a change when you can name a decision the reviewer should confirm or challenge. Skip mechanical edits that follow from that decision. A large diff can still have a single review stop.
+
+Group repetitive tests by the behavior they cover in a collapsed `<details>` block with a descriptive `<summary>`, such as “Retry coverage for duplicate deliveries”. If the format lacks collapsible sections, use one sentence. Keep a specific assertion visible when it needs judgment, for example when it changes which failures count as success or weakens an existing guarantee.
+
 ## Decide whether to draw
 
 Name the question a picture would answer. A new retry loop might raise “Who owns the retry after the request returns?” A timeout changing from 5 to 10 seconds is already clear in one sentence. Omit the diagram when removing it costs the reviewer no understanding.
@@ -41,6 +47,6 @@ Keep the conclusion in the description and tell the reviewer what to try. Build 
 
 Return Markdown ready for the description. Put the takeaway in prose so it also works if the diagram fails to render. For a diagram, use one fenced `mermaid` block with established syntax and readable text labels. Keep meaning independent of color. If the target instance cannot display Mermaid, express the same path in a fenced `text` block. [GitHub diagram support](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams) · [GitLab diagram support](https://docs.gitlab.com/user/markdown/#diagrams-and-flowcharts)
 
-End with where to start reviewing. Name the file or symbol that owns the changed decision and the specific behavior to check there. Add a second stop when a test or consumer answers a distinct question. Link to verified host permalinks when available, or use repo-relative paths in backticks.
+End with where to start reviewing. Name the file or symbol that owns the changed decision and the specific behavior to check there. Add another stop only if it raises a separate question the reviewer needs to decide. Link to verified host permalinks when available, or use repo-relative paths in backticks.
 
 If an existing description is supplied, offer a section that fits its template and preserves the author's text. Draft in chat unless the user asks to update the PR or MR.
