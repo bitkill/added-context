@@ -13,6 +13,8 @@ Read the actual PR or MR diff against its target, or the local comparison the us
 
 Name the question a picture would answer. A new retry loop might raise “Who owns the retry after the request returns?” A timeout changing from 5 to 10 seconds is already clear in one sentence. Omit the diagram when removing it costs the reviewer no understanding.
 
+When a reviewer needs to see what changed in an existing API contract, type, component tree, or call path, use a short fenced `diff` block. Mark removed lines with `-` and added lines with `+`. Keep enough surrounding context to show where the change belongs. If most of the structure is new or the diff obscures ownership or call order, show the resulting structure in full.
+
 When a picture earns its place, draw the smallest changed path that answers the question.
 
 - Use a flowchart for routing, ownership, or data movement. Label the changed edge or branch in words.
